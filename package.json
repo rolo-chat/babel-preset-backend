@@ -3,11 +3,12 @@
   "version": "0.1.1",
   "description": "rolo backend babel preset",
   "main": "index.js",
+  "scripts": {
+    "release": "release-it",
+    "release:ci": "release-it --ci"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
-  },
-  "scripts": {
-    "release": "release-it"
   },
   "release-it": {
     "git": {
