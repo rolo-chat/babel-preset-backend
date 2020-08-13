@@ -1,8 +1,11 @@
 {
   "name": "@kaneoh/babel-preset-backend",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "rolo backend babel preset",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "release": "release-it"
   },
