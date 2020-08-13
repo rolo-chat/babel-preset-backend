@@ -1,7 +1,7 @@
 module.exports = () => ({
   presets: [
     [
-      require('@babel/preset-env'), 
+      '@babel/preset-env',
       {
         targets: 'node 12',
         useBuiltIns: 'entry',
@@ -11,7 +11,7 @@ module.exports = () => ({
   ],
   plugins: [
     [
-      require('babel-plugin-module-resolver'),
+      'module-resolver',
       {
         root: 'src',
         alias: {
@@ -20,10 +20,10 @@ module.exports = () => ({
         },
       },
     ],
-    {default: require('babel-plugin-dynamic-import-node')},
-    require("@babel/plugin-proposal-object-rest-spread"),
-    require("@babel/plugin-proposal-class-properties"),
-    require("@babel/plugin-transform-classes"),
-    require("@babel/plugin-transform-runtime"),
+    'dynamic-import-node',
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-classes",
+    "@babel/plugin-transform-runtime",
   ],
 });
