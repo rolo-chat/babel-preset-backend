@@ -13,6 +13,7 @@ module.exports = () => ({
     [
       'module-resolver',
       {
+        engine: '@kaneoh/rolo-server-engine',
         root: 'src',
         alias: {
           env: './env',
