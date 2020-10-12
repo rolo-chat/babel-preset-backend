@@ -1,5 +1,5 @@
 {
-  "name": "@rolo-chat/babel-preset-backend",
+  "name": "babel-preset-rolo-backend",
   "version": "0.1.6",
   "description": "Babel preset for the backend teams",
   "main": "src/index.js",
