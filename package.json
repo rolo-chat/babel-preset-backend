@@ -1,24 +1,29 @@
 {
-  "name": "@kaneoh/babel-preset-backend",
+  "name": "@rolo-chat/babel-preset-backend",
   "version": "0.1.3",
-  "description": "rolo backend babel preset",
-  "main": "index.js",
-  "scripts": {
-    "release": "release-it",
-    "release:ci": "release-it --ci"
+  "description": "Babel preset for the backend teams",
+  "main": "src/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolo-chat/babel-preset-backend.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org/"
   },
-  "release-it": {
-    "git": {
-      "commitMessage": "[release] v${version}",
-      "requireUpstream": false
-    }
+  "keywords": [
+    "babel",
+    "preset",
+    "backend",
+    "front",
+    "react"
+  ],
+  "author": "Rolo Innovation Inc.",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rolo-chat/babel-preset-backend/issues"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "homepage": "https://github.com/rolo-chat/babel-preset-backend#readme",
   "dependencies": {
     "@babel/core": "^7.11.1",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
@@ -27,9 +32,8 @@
     "@babel/plugin-transform-runtime": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
     "babel-loader": "^8.1.0",
-    "babel-plugin-module-resolver": "^4.0.0"
+    "babel-plugin-module-resolver": "^4.0.0",
+    "core-js": "^3.6.5"
   },
-  "devDependencies": {
-    "release-it": "^13.6.6"
-  }
+  "devDependencies": {}
 }

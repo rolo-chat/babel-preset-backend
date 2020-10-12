@@ -1,13 +1,17 @@
-# Rolo Backend Babel Preset
+# Babel preset backend
 
-## install
-`npm i -D @kaneoh/babel-preset-backend`
+Babel preset for the backend teams working on Rolo.
 
-## configure babelrc
-* you can still add other plugins and presets works like [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env)
-``` json
-{
-  "presets": [ "@kaneoh/babel-preset-backend" ]
-}
+## Install
+
+```bash
+npm i -D @rolo-chat/babel-preset-backend
 ```
 
+Add it as a preset in `.babelrc`
+
+```json
+{
+  "presets": ["@rolo-chat/babel-preset-backend"]
+}
+```
