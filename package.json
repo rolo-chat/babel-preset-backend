@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-rolo-backend",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Babel preset for the backend teams",
   "main": "src/index.js",
   "scripts": {},
@@ -37,7 +37,6 @@
     "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
     "@babel/register": "^7.11.5",
-    "@babel/runtime": "^7.12.1",
-    "core-js": "^3.6.5"
+    "@babel/runtime": "^7.12.1"
   }
 }
