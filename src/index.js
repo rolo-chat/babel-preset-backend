@@ -1,27 +1,30 @@
 module.exports = () => ({
+  sourceMaps: true,
   presets: [
     [
-      '@babel/preset-env',
+      "@babel/preset-env",
       {
-        targets: 'node 12',
-        useBuiltIns: 'entry',
+        targets: {
+          node: 14,
+        },
+        useBuiltIns: "entry",
         corejs: 3,
       },
     ],
   ],
   plugins: [
     [
-      'module-resolver',
+      "module-resolver",
       {
-        root: 'src',
+        root: "src",
         alias: {
-          env: './env',
-          test: './test',
-          engine: '@kaneoh/rolo-server-engine',
+          env: "./env",
+          test: "./test",
+          engine: "@rolo-chat/server-engine",
         },
       },
     ],
-    'dynamic-import-node',
+    "dynamic-import-node",
     "@babel/plugin-proposal-object-rest-spread",
     "@babel/plugin-proposal-class-properties",
     "@babel/plugin-transform-classes",
