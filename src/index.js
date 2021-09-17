@@ -29,4 +29,9 @@ module.exports = () => ({
     "@babel/plugin-transform-classes",
     "@babel/plugin-transform-runtime",
   ],
+  env: {
+    test: {
+      plugins: ["istanbul"],
+    },
+  },
 });
